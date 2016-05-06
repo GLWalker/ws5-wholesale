@@ -1,0 +1,222 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>WS5 Wholesale Addon for osCommerce</title>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+<link  rel="stylesheet"  href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+<style>
+@font-face {
+  font-family: "PT Serif Caption";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Serif Caption"), local("PTSerif-Caption"), url(https://themes.googleusercontent.com/static/fonts/ptserifcaption/v4/7xkFOeTxxO1GMC1suOUYWWhBabBbEjGd1iRmpyoZukE.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hp1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+body,p,div,table tbody tr td,.label,.badge,.tile,.modal-body,.alert{font-family:'Segoe UI Semilight','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:300;font-size:11pt;letter-spacing:.02em;font-smooth:always}a,.close,label,address,.navbar-link,.navbar-brand,.btn,button,html input[type="button"],input[type="reset"],input[type="submit"],.pagination,table thead tr th,table thead tr td,nav,.nav,.nav-bar,.pager,cite,q,.brand,.link{font-family:'Segoe UI','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:400;font-smooth:always}h1,.h1{font-family:'Segoe UI Light','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:200;font-size:20pt;letter-spacing:.00em;line-height:26pt;font-smooth:always}h2,.h2{font-family:'Segoe UI Light','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:200;font-size:18pt;letter-spacing:.01em;line-height:24pt;font-smooth:always}h3,.h3,.panel-heading,.infoBoxHeader,header,legend{font-family:'Segoe UI Light','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:200;font-size:16pt;letter-spacing:.01em;line-height:22pt;font-smooth:always}h4,.h4{font-family:'Segoe UI Semibold','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:400;font-size:14pt;letter-spacing:.01em;line-height:20pt;font-smooth:always}h5,.h5{font-family:'Segoe UI Semibold','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:600;font-size:12pt;letter-spacing:.01em;line-height:18pt;font-smooth:always}h6,.h6{font-family:'Segoe UI Semibold','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:600;font-size:11pt;letter-spacing:.01em;line-height:16pt;font-smooth:always}h1 small,h2 small,h3 small,.h1 small,.h2 small,.h3 small{font-family:'Segoe UI Light','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:200;letter-spacing:.01em;font-smooth:always}h4 small,h5 small,h6 small,.h4 small,.h5 small,.h6 small{font-family:'Segoe UI Semibold','Open Sans',Verdana,Arial,Helvetica,sans-serif;font-weight:400;letter-spacing:.01em;font-smooth:always}blockquote,figcaption{font-family:'PT Serif Caption',sans-serif,serif !important;font-weight:300;letter-spacing:.02em;line-height:14pt;font-smooth:always}small{font-weight:400}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:5px 0 10px 0;padding:0}p.indent:first-letter {padding-left:1em}p.raise-cap:first-letter {font-size:1.5em}p.drop-cap:first-letter {float:left;font-weight:200;font-size:3em;letter-spacing:.00em;line-height:26pt;padding-top:4px;padding-right:8px;padding-left:3px}.text-justify{text-align:justify;text-justify:newsletter}.modal-body,.alert{line-height:14pt}.label{font-size:90%;font-weight:400}hr{height:1px}.btn{box-shadow:inset 0 0 1px rgba(255,255,255,.9)}button:focus,.btn:focus,a.btn:focus,input[type="button"]:focus,input[type="submit"]:focus{top:.25px;left:.25px;margin-bottom:-.25px;margin-right:-.25px}.label{padding-left:8px;padding-right:8px}html,body{height:100%}body{background:rgba(236,240,241,.3);color:#222;padding:0;margin:0;position:relative}[class^="icon-flag-"],[class*=" icon-flag-"]{display:inline-block !important;margin-bottom:-3px}.wrapper{width:51.191250511955em;max-width:100%;margin:20px auto}.one-column #primary,.one-column #secondary{width:48.5%;float:left;min-height:1px;padding:.75%;position:relative}.one-column #content{width:98.5%;float:left;height:auto;padding:.75%;position:relative}#main{background:0}#content{background:0}#primary,#secondary{background:0;overflow:visible !important}[class*=-brdr],[class^="-brdr"]{border:1px solid}[class*=-outln],[class^="-outln"]{outline:1px solid;outline-offset:.25em}.belize-hole-bg{background-color:#2980b9;box-shadow:inset 0 0 1px rgba(46,142,206,.9)}.belize-hole-bg.hvr:hover,.btn.belize-hole-bg:hover{background:#2e8ece;box-shadow:0 0 2px rgba(41,128,185,.2)}.belize-hole-brdr{border-color:#2980b9}.belize-hole-outln{outline-color:#2980b9}.belize-hole-txt{color:#2980b9}.concrete-bg{background-color:#95a5a6;box-shadow:inset 0 0 1px rgba(244,166,42,.9)}.concrete-bg.hvr:hover,.btn.concrete-bg:hover{background:#a3b1b2;box-shadow:0 0 2px rgba(149,165,166,.2)}.concrete-brdr{border-color:#95a5a6}.concrete-outln{outline-color:#95a5a6}.concrete-txt{color:#95a5a6}.midnight-blue-bg{background-color:#2c3e50;box-shadow:inset 0 0 1px rgba(53,75,96,.9)}.midnight-blue-bg.hvr:hover,.btn.midnight-blue-bg:hover{background:#354b60 box-shadow:0 0 2px rgba(44,62,80,.2)}.midnight-blue-brdr{border-color:#2c3e50}.midnight-blue-outln{outline-color:#2c3e50}.midnight-blue-txt{color:#2c3e50}#header .row-fluid{margin-bottom:22px}#header h1,#header .h2,#colophon .h2{line-height:22pt;padding:0 0 0 8px;margin:0;font-weight:400}#header h1,#header .h2,#header [class^="icon-"],#header [class*=" icon-"],#colophon .h2,#colophon [class^="icon-"],#colophon [class*=" icon-"], #colophon .h2 a{color:#fff;font-size:12pt}#header [class^="icon-"],#header [class*=" icon-"],#colophon [class^="icon-"],#colophon [class*=" icon-"]{padding-right:4px}#installContent,#uninstallContent{border-width:0 0 0 30px;padding-left:30px;margin-top:-12px;margin-left:-7px}#installContent [class^="icon-"],#installContent [class*=" icon-"],#uninstallContent [class^="icon-"],#uninstallContent [class*=" icon-"]{float:inherit;margin-left:-52px;margin-top:8px;font-size:12pt;color:#fff} 
+#installContent .icons-ul .icon-li, #uninstallContent .icons-ul .icon-li { left:-2.142857142857143em;width:2.142857142857143em; margin-left: 0; margin-top:0; color:#777;} #installContent h2,#uninstallContent h2{margin-top:0}#exitContent{padding-left:60px;margin-top:18px;margin-left:-7px}*/.pln{color:#333} @media screen{.str{color:#d14}.kwd{color:#333}.com{color:#998}.typ{color:#458}.lit{color:#458}.pun{color:#333}.opn{color:#333}.clo{color:#333}.tag{color:navy}.atn{color:teal}.atv{color:#d14}.dec{color:#333}.var{color:teal}.fun{color:#900}} pre.prettyprint{background:white;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace;font-size:12px;line-height:1.5;border:1px solid #ccc;padding:10px}ol.linenums{margin-top:0;margin-bottom:0} @media only screen and (max-width:767px){body{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;width:100%;min-width:0;margin-left:0;margin-right:0;padding-left:0;padding-right:0}.row-fluid,.wrapper{width:auto;min-width:0;margin-left:0;margin-right:0;padding-left:0;padding-right:0}.one-column #primary,.one-column #secondary,.one-column #content{width:98.5%}.wrapper{border:1px solid #fff;margin-top:0;margin-bottom:0}#header .row-fluid{margin-bottom:1px}#header .span5{border-bottom:1px solid #fff}#header .unstyled{padding:8px} #header .span11{padding:8px}#installContent,#uninstallContent,#exitContent{border-width:0;padding:0 8px 0 16px}#installContent [class^="icon-"],#installContent [class*=" icon-"],#uninstallContent [class^="icon-"],#uninstallContent [class*=" icon-"]{display:none}} @media print,projection{*{box-shadow:none !important;text-shadow:none !important}body{background:0}.wrapper{width:51.191250511955em;margin:0 auto}#installContent,#uninstallContent{border-width:0;padding-left:60px}img{max-width:100% !important}.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun,.opn,.clo{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}
+</style>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+</head>
+<body class="one-column" itemscope itemtype="http://schema.org/Code">
+
+<!-- begin all layout options -->
+	<div class="wrapper"> 
+	
+		<!-- main header bar -->
+		<header id="header">
+		
+			<div class="row-fluid">
+				<div class="span12 concrete-bg">
+					<h1>
+					<i class="icon-gear"></i>WS5 Wholesale Addon for osCommerce 2.3.4</h1>	
+				</div>
+			</div>
+		
+			<div class="row-fluid">
+				<div class="span5 midnight-blue-bg">
+					<span class="h2"><i class="icon-user"></i> <span itemprop="author creator copyrightHolder">G.L. Walker</span></span>
+				</div>
+				<div class="span7 belize-hole-bg">
+					<span class="h2"><i class="icon-tag"></i>Wholesale Pricing System</span>
+				</div>
+			</div>
+			
+			<div class="row-fluid">
+				<div class="span11">
+					<h2 class="midnight-blue-txt">About</h2>
+					<div itemprop="about">
+						<p class="text-justify">The addon allows a simple way of giving products a wholesale price, and assigning customers to a wholesale status, all with very minimal impact on core files.
+                        </p>
+					</div>
+						
+					<h3>Successful Installation will allow the following:</h3>
+					<ul class="unstyled" itemprop="description">
+						<li>Customers may be switched to wholesale buyers</li>
+						<li>Seperate wholesale price may be entered for each product</li>
+						<li>Seperate weight may be entered for wholesale usage</li>
+						<li>Text for wholesale notes - (Ex: "Sold in lots of 4")</li>
+						<li>Store admin may choose whether on not to charge taxes on wholesale purchases</li>
+					</ul>
+					
+				</div><!-- span11  -->
+			</div>
+			
+		</header>		
+		<!-- #header-->
+		<section id="main" class="row-fluid">
+			<div id="content" role="main">
+				
+				
+				
+				
+				
+				<div class="row-fluid"><!--begin install -->
+					<div id="installContent" class="span11 concrete-brdr">
+						<i class="icon-check-sign"></i>
+						<h2 class="midnight-blue-txt">Installation:</h2>
+						
+						<strong class="belize-hole-txt">The following are new files:</strong>
+						
+						<ul class="icons-ul">
+							<li><i class="icon-li icon-file"></i>includes/modules/content/login/cm_wholesale_login_form.php</li>
+							<li><i class="icon-li icon-file"></i>inludes/languages/english/modules/content/login/cm_wholesale_login_form.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/wholesale.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/inludes/languages/english/wholesale.php</li>
+						</ul>
+                        
+                        
+                        <strong class="belize-hole-txt">The following are modified existing files:</strong>
+						
+						<ul class="icons-ul">
+							<li><i class="icon-li icon-file"></i>logoff.php</li>
+							<li><i class="icon-li icon-file"></i>product_info.php</li>
+                            <li><i class="icon-li icon-file"></i>inludes/database_tables.php</li>
+                            <li><i class="icon-li icon-file"></i>includes/classes/shopping_cart.php</li>
+                            <li><i class="icon-li icon-file"></i>inludes/functions/general.php</li>
+                            <li><i class="icon-li icon-file"></i>inludes/modules/product_listing.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/customers.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/includes/filenames.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/includes/boxes/catalog.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/includes/languages/english.php</li>
+                            <li><i class="icon-li icon-file"></i>admin/includes/languages/english/customers.php</li>                            
+						</ul>
+						
+						<h3 class="midnight-blue-txt">Drop On Top Quick Install<br><small>(For unmodified Shops)</small></h3>
+						
+						<p class="text-justify">Upload all files as found in the "catalog" folder.</p>
+                        
+                        <h3 class="midnight-blue-txt">Manual Install</h3>
+                        
+                        <p class="text-justify">Upload new files as listed above, and found in the "catalog" folder.</p>
+                        <p class="text-justify">Merge changes in the files marked as existing files above. You may use a file compare program, or search for:</p>
+                        
+						<pre class="prettyprint">
+/* WS5 Wholesale
+						</pre>
+					 <p class="text-justify">Each change has been documented.</p>
+                     
+                     <h3 class="midnight-blue-txt">Activate Module</h3>
+                     <p class="text-justify">
+                            Navigate to your admin's Modules->Content.<br>
+							Click "Install Module" button.<br>
+							Choose "Wholesale Login Form".<br>
+							Click "Install Module" button.<br>
+							Configure options and save.<br>
+                            This will also build 2 new tables in your database, customers_to_wholesale & products_to_wholesale</p>
+                     <p class="text-justify">Next remove your existing Login Form.</p>
+						
+					</div>
+				</div><!-- end install -->
+				
+				<div class="row-fluid"><!--just a spacer -->
+					<div class="span12"></div>
+				</div>
+				
+				<div class="row-fluid"><!-- begin uninstall -->
+					<div id="uninstallContent" class="span11 belize-hole-brdr">
+						<i class="icon-ban-circle"></i>
+						<h2 class="midnight-blue-txt">Uninstall</h2>			
+						
+						<p class="text-justify">
+							You may choose to remove the module to drop any configuration data, but the new database tables will remain to prevent data loss in case of accidental removal.<br>
+                            You basically must undo all file changes and reinstall the original "Login Form". <br>However, the code is very unobtrusive and would not hurt to leave in place.
+						</p>
+
+					</div>
+				</div><!-- end uninstall -->
+				
+				<div class="row-fluid"><!--just a spacer -->
+					<div class="span12"></div>
+				</div>
+
+				<div class="row-fluid">
+					<div id="exitContent" class="span10 offset1">
+						<h2 class="midnight-blue-txt">Usage</h2>			
+						<p class="text-justify">
+							Customers may be assigned as wholesale by clicking on the green status indicator as found in your admins customers.php<br>
+							Wholesale prices, weight, and small notes may be made in your admin wholesale.php.<br>
+                            The process of entering wholesale data is eerily similar to specials.php
+						</p>
+                        <p class="text-justify">
+                          When a wholesale customer logs in, a wholesale session is set. This session allows the wholesale price and other options to be utilized. Wholesale prices are seen on the product info page, as well as product listing within a category.<br>
+                          It is up to YOU to customize the output as needed, if you want to make each area a price is presented show wholesale pricing, then you must change each area with simular changes as done in:
+                          <ul class="icons-ul">
+							<li><i class="icon-li icon-file"></i>product_info.php</li>
+                            <li><i class="icon-li icon-file"></i>inludes/modules/product_listing.php</li>              
+						</ul>
+                        I see very little need to do such for customers that know they are wholesale though. 
+                        
+                        </p>
+						
+					</div>
+				</div>
+				
+			</div><!-- #content role main -->
+		</section><!-- section #main -->
+		<footer>
+			<div class="row-fluid">
+				<div id="colophon" class="span12 midnight-blue-bg">
+					<span class="h2"><i class="icon-cog"></i> Code packaged for <span itemprop="audience">osCommerce community</span> by <span itemprop="contributor">G.L. Walker</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://wsfive.com">http://wsfive.com</a></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- wrapper --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
